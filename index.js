@@ -29,3 +29,6 @@ inp.on("close", () => {
 
   //end-here
 });
+
+
+// type input.txt | node index.js

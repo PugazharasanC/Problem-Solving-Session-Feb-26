@@ -39,11 +39,12 @@
 //! Sum of digits in a number.
 function sumOfDigits(num) {
   let sum = 0;
+  let temp = num;
   while (num > 0) {
     sum += num % 10;
     num = Math.floor(num / 10);
   }
-  return sum;
+  return [temp, sum];
 }
 // console.log(sumOfDigits(1372))
 //! Calculate the factorial of a number.
@@ -96,13 +97,54 @@ function isPrime(num) {
   }
   return true;
 }
-console.time("isPrime");
-const x = isPrime(1057438801);
-console.timeEnd("isPrime");
-console.log(x);
+// console.time("isPrime");
+// const x = isPrime(1057438801);
+// console.timeEnd("isPrime");
+// console.log(x);
 //! Print a hollow square pattern.
-//! Print a right-angled triangle pattern of asterisks.
+// 5
 
+//   * * * * *
+//   *       *
+//   *       *
+//   *       *
+//   * * * * *
+
+function hallowSquare(n) {
+  for (let row = 0; row < n; row++) {
+    const line = [];
+    for (let col = 0; col < n; col++) {
+      if (
+        row == 0 ||
+        col == 0 ||
+        row == col ||
+        row == n - col - 1 ||
+        row == Math.floor(n / 2) ||
+        col == Math.floor(n / 2) ||
+        row == n - 1 ||
+        col == n - 1
+      )
+        line.push("*");
+      else line.push(" ");
+    }
+    console.log(line.join(" "));
+  }
+}
+// hallowSquare(15);
+//! Print a right-angled triangle pattern of asterisks.
+function patterns(n) {
+  for (let row = 0; row < n; row++) {
+    const line = [];
+    for (let col = 0; col < n; col++) {
+      if ((row < n / 2 && col < n / 2) || (row >= n / 2 && col >= n / 2)) {
+        if ((row+col) % 2 == 0) line.push("*");
+        else line.push("#");
+      } else line.push(" ");
+    }
+    console.log(line.join(" "));
+  }
+}
+patterns(10);
 module.exports = { sumOfDigits };
 // todo Post-Session Practice Questions:
 // todo Find the LCM of two numbers.
