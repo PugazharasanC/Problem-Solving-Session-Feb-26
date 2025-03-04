@@ -123,13 +123,13 @@ function removeDuplicates(arr = []) {
   }
   return arr;
 }
-console.log(
-  removeDuplicates(
-    sort(Array.from({ length: 25 }, () => Math.floor(Math.random() * 10)))
-  )
-);
+// console.log(
+//   removeDuplicates(
+//     sort(Array.from({ length: 25 }, () => Math.floor(Math.random() * 10)))
+//   )
+// );
 
-module.exports = { sumOfArr, maxAndMin };
+module.exports = { sumOfArr, maxAndMin, rotateByK };
 // todo Post-Session Practice Questions:
 // todo Find the number of occurrences of an element in an array.
 // todo Merge two sorted arrays.
