@@ -255,15 +255,17 @@ console.log("LCA of 28 and 20 is ::", bst.findLCA(28, 20));
 console.log("LCA of 28 and 48 is ::", bst.findLCA(28, 48));
 console.log("LCA of 11 and 25 is ::", bst.findLCA(11, 25));
 console.log("LCA of 11 and 15 is ::", bst.findLCA(11, 15));
-// // todo Post-Session Practice Questions:
-// // todo Perform an in-order traversal iteratively.
-// // todo Calculate the sum of all nodes in a binary tree.
-// // todo Find the diameter of a binary tree.
-// // todo Check if two binary trees are identical.
-// // todo Convert a binary tree to a doubly linked list.
-// // todo Construct a binary tree from its inorder and preorder traversals.
-// // todo Print all nodes at k distance from the root.
-// // todo Serialize and deserialize a binary tree.
-// // todo Find the level with the maximum sum in a binary tree.
-// // todo Calculate the depth of the deepest leaf node.
-// // todo Convert a BST to a balanced BST.
+
+
+// todo Post-Session Practice Questions:
+// todo Perform an in-order traversal iteratively.
+// todo Calculate the sum of all nodes in a binary tree.
+// todo Find the diameter of a binary tree.
+// todo Check if two binary trees are identical.
+// todo Convert a binary tree to a doubly linked list.
+// todo Construct a binary tree from its inorder and preorder traversals.
+// todo Print all nodes at k distance from the root.
+// todo Serialize and deserialize a binary tree.
+// todo Find the level with the maximum sum in a binary tree.
+// todo Calculate the depth of the deepest leaf node.
+// todo Convert a BST to a balanced BST.
